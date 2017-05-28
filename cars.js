@@ -8,6 +8,38 @@ var taxi =
     convertable: false,
     mileage: 281341
   };
+var taxi =
+  {
+    make: "Webville Motors",
+    model: "Taxi",
+    year: 1955,
+    color: "yellow",
+    passenger: 4,
+    convertable: false,
+    mileage: 281341
+  };
+
+var taxi =
+  {
+    make: "Webville Motors",
+    model: "Taxi",
+    year: 1955,
+    color: "yellow",
+    passenger: 4,
+    convertable: false,
+    mileage: 281341
+  };
+
+var taxi =
+  {
+    make: "Webville Motors",
+    model: "Taxi",
+    year: 1955,
+    color: "yellow",
+    passenger: 4,
+    convertable: false,
+    mileage: 281341
+  };
 
   function prequal(car)
   {
