@@ -8,6 +8,10 @@ var fiat =
   convertible: false,
   mileage: 88000,
   started: false,
+<<<<<<< HEAD
+=======
+  fuel: 0,
+>>>>>>> startingCars
 
   start: function()
   {
@@ -28,8 +32,17 @@ var fiat =
     {
       alert("You need to start the engine first.");
     }
+<<<<<<< HEAD
   }
 }
+=======
+  },
+  addFuel: function (amount)
+  {
+      this.fuel = this.fuel + amount;
+  }
+};
+>>>>>>> startingCars
 
 fiat.drive();
 fiat.start();
