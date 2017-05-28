@@ -8,10 +8,7 @@ var fiat =
   convertible: false,
   mileage: 88000,
   started: false,
-<<<<<<< HEAD
-=======
   fuel: 0,
->>>>>>> startingCars
 
   start: function()
   {
@@ -27,24 +24,27 @@ var fiat =
   {
     if (this.started)
     {
-      alert("ZOOM ZOOM!");
-    } else
-    {
-      alert("You need to start the engine first.");
-    }
-<<<<<<< HEAD
-  }
-}
-=======
+      if (this.fuel > 0)
+      {
+          alert(this.make + " " + this.model + " goes zoom zoom!");
+          this.fuel = this.fuel - 1;
+      } else
+      {
+        alert("Uh oh, out of fuel.");
+        this.stop();
+      }
   },
   addFuel: function (amount)
   {
       this.fuel = this.fuel + amount;
   }
 };
->>>>>>> startingCars
 
-fiat.drive();
 fiat.start();
+fiat.drive();
+fiat.addFuel(2);
+fiat.start();
+fiat.drive();
+fiat.drive();
 fiat.drive();
 fiat.stop();
