@@ -33,6 +33,7 @@ var fiat =
         alert("Uh oh, out of fuel.");
         this.stop();
       }
+    }
   },
   addFuel: function (amount)
   {
