@@ -1,33 +1,22 @@
-var taxi =
+var cadi =
   {
-    make: "Webville Motors",
-    model: "Taxi",
+    make: "GM",
+    model: "Cadillac",
     year: 1955,
-    color: "yellow",
-    passenger: 4,
+    color: "tan",
+    passenger: 5,
     convertable: false,
-    mileage: 281341
+    mileage: 12892
   };
-var taxi =
+var chevy =
   {
-    make: "Webville Motors",
-    model: "Taxi",
-    year: 1955,
-    color: "yellow",
-    passenger: 4,
+    make: "Chevy",
+    model: "Bel Air",
+    year: 1957,
+    color: "red",
+    passenger: 2,
     convertable: false,
-    mileage: 281341
-  };
-
-var taxi =
-  {
-    make: "Webville Motors",
-    model: "Taxi",
-    year: 1955,
-    color: "yellow",
-    passenger: 4,
-    convertable: false,
-    mileage: 281341
+    mileage: 1021
   };
 
 var taxi =
