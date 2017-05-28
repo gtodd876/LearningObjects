@@ -6,7 +6,26 @@ var cadi =
     color: "tan",
     passenger: 5,
     convertable: false,
-    mileage: 12892
+    mileage: 12892,
+    started: false,
+    start: function()
+    {
+      this.started = true;
+    },
+    stop: function ()
+    {
+        this.started = false;
+    },
+    drive: function()
+    {
+      if (this.started)
+      {
+        alert(this.make + " " + this.model + " goes zoom zoom!");
+      } else {
+        alert("You need to start the engine first.");
+      }
+    }
+
   };
 var chevy =
   {
@@ -16,7 +35,26 @@ var chevy =
     color: "red",
     passenger: 2,
     convertable: false,
-    mileage: 1021
+    mileage: 1021,
+    started: false,
+    start: function()
+    {
+      this.started = true;
+    },
+    stop: function ()
+    {
+        this.started = false;
+    },
+    drive: function()
+    {
+      if (this.started)
+      {
+        alert(this.make + " " + this.model + " goes zoom zoom!");
+      } else {
+        alert("You need to start the engine first.");
+      }
+    }
+
   };
 
 var taxi =
@@ -27,26 +65,24 @@ var taxi =
     color: "yellow",
     passenger: 4,
     convertable: false,
-    mileage: 281341
-  };
-
-  function prequal(car)
-  {
-      if (car.mileage > 10000)
+    mileage: 281341,
+    started: false,
+    start: function()
+    {
+      this.started = true;
+    },
+    stop: function ()
+    {
+        this.started = false;
+    },
+    drive: function()
+    {
+      if (this.started)
       {
-          return false;
-      } else if (car.year > 1960)
-      {
-          return false;
+        alert(this.make + " " + this.model + " goes zoom zoom!");
+      } else {
+        alert("You need to start the engine first.");
       }
-    return true;
-  }
+    }
 
-  var worthALook = prequal(taxi);
-
-  if (worthALook)
-  {
-      console.log("You goot check out this " + taxi.make + " " + " " + taxi.model);
-  } else {
-      console.log("You should really pass on the " + taxi.make + " " + taxi.model);
-  }
+  };
