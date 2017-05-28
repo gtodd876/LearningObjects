@@ -86,3 +86,14 @@ var taxi =
     }
 
   };
+
+cadi.start();
+cadi.drive();
+cadi.stop();
+chevy.start();
+chevy.drive();
+chevy.stop();
+chevy.start();
+taxi.start();
+taxi.drive();
+taxi.stop();
